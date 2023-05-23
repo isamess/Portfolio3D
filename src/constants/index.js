@@ -19,8 +19,13 @@ import {
   threejs,
   landing,
 
+
 } from "../assets";
 import erica from "./erica.png"
+import Santiago from "./SantiagoMartinez.png"
+import kultrun from "./kultrun.png"
+import Maria from "./Maria.jpeg"
+import wordpress from "./wordpress.png"
 
 export const navLinks = [
   {
@@ -101,10 +106,10 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  // {
-  //   name: "figma",
-  //   icon: figma,
-  // },
+  {
+    name: "wordpress",
+    icon: wordpress,
+  },
   // {
   //   name: "docker",
   //   icon: docker,
@@ -159,19 +164,19 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "Study partner",
-    company: "Henry Bootcamp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Isa es una profesional responsable y trabajadora.Puede aportar mucho valor a cualquier equipo por su capacidad de relacionarse positivamente con sus compañeros y su calidad humana. Su trabajo a nivel técnico es impecable y cuenta con las herramientas necesarias para ser una pieza clave de cualquier equipo de desarrollo.",
+    name:"Santiago Martinez",
+    designation: "Scrum Master",
+    company: "Henry",
+    image: Santiago,
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Wao! Isabel es una persona comprometida orientada a lograr lo que se propone. Tuve la oportunidad de trabajar con ella en proyectos de desarrollo web y fue excelente. Es una persona creativa que está en aprendizaje constante siempre dispuesta y positiva para cualquier situación, tiene mucho conocimiento que aportar, de hecho aprendí mucho mientras estuvimos trabajando. La verdad trabajaría con ella nuevamente.",
+    name: "Maria Antonieta Guevara",
+    designation: "Study partner",
+    company: "Henry Bootcamp",
+    image: Maria,
   },
 ];
 
@@ -254,6 +259,28 @@ const projects = [
     ],
     image: tripguide,
     source_code_link: "https://github.com/isamess/PF-Henrys-Merch2.0",
+  },
+  {
+    name: "Artes en vitraux",
+    description:
+      "Wordpress site for 'El Kultrun de Isa Taller Vitraux', a personal project to display a catalog of our artistic creations on vitraux, muralism and tesselion with clusters that lead to several category pages ",
+    tags: [
+      {
+        name: "Wordpress",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "twentyfourteen template",
+        color: "green-text-gradient",
+      },
+      
+      {
+        name: "El Kultrun de Isa",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: kultrun,
+    source_code_link:" https://artesenvitraux.wordpress.com/"
   },
 ];
 
