@@ -71,11 +71,11 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.85] bg-black-100 p-8 rounded-2xl'
+        className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact me</h3>
-        <img src={isa} alt="Isabel Mesina" className="w-[20] h-[20] green-pink-gradient p-[2px] rounded-[20px]" />
+        <img src={isa} alt="Isabel Mesina" className="w-[10] h-[10] green-pink-gradient p-[2px] rounded-[20px]" />
 
         <form
           ref={formRef}
@@ -83,7 +83,7 @@ const Contact = () => {
           className='mt-12 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+            <span className='text-white font-medium mb-4'>Your Name,please!</span>
             <input
               type='text'
               name='name'
@@ -94,7 +94,7 @@ const Contact = () => {
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+            <span className='text-white font-medium mb-4'>Your email, please!</span>
             <input
               type='email'
               name='email'
@@ -105,7 +105,7 @@ const Contact = () => {
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
+            <span className='text-white font-medium mb-4'>Your Message, please!</span>
             <textarea
               rows={7}
               name='message'
@@ -120,7 +120,7 @@ const Contact = () => {
             type='submit'
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
-             {loading ? "Sending..." : "Send"}
+            {loading ? "Sending..." : "Send"}
           </button>
         </form>
       </motion.div>

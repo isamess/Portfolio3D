@@ -7,7 +7,7 @@ import { SectionWrapper } from "../hoc";
 import {fadeIn, textVariant} from '../utils/motion';
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[200px] w-70%">
+  <Tilt className="xs:w-[250px] w-90%">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -41,7 +41,8 @@ const About = () => {
       <h2 className={styles.sectionHeadText}>Overview</h2>
     </motion.div>
     
-    <motion.p variants={fadeIn("", "", 0.1, 1)}
+    <motion.p 
+    variants={fadeIn("", "", 0.1, 1)}
     className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
     > 
     I'm a skilled full stack web developer. I've studied JavaScript, TypeScript, Node.js, React, Redux, Express.
@@ -59,7 +60,7 @@ const About = () => {
       </div>
   </>
   )
-}
+};
 
 
 export default SectionWrapper(About, "about");

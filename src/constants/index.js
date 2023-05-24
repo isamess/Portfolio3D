@@ -136,8 +136,8 @@ const experiences = [
     iconBg: "#383E56",
     date: "march 2005 - Dic 2015",
     points: [
-      "Philosophy  and Literature teacher to animated film students.",
-      "Lessons planification, group management, evaluations.",
+      "Philosophy  and Literature teacher to animated film students, secondary students and courses of philosophy with childrens, too.",
+      "Lessons planification, lectures, educational and investigation dynamics, problems resolution, group management, assignments, promotion lasting and meaningful learning,  evaluations.",
     ],
   },
   {
