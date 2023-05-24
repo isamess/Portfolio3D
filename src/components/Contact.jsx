@@ -75,37 +75,38 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact me</h3>
+        <h4>I'm waiting for you</h4>
         <img src={isa} alt="Isabel Mesina" className="w-[10] h-[10] green-pink-gradient p-[2px] rounded-[20px]" />
 
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
+          className='mt-12 flex flex-col gap-10'
         >
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name,please!</span>
+            <span className='text-white font-medium mb-4'>Your Name</span>
             <input
               type='text'
               name='name'
               value={form.name}
               onChange={handleChange}
-              placeholder="What's your name?"
+              placeholder="Type your name here, please!"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email, please!</span>
+            <span className='text-white font-medium mb-4'>Your web adress</span>
             <input
               type='email'
               name='email'
               value={form.email}
               onChange={handleChange}
-              placeholder="What's your web address?"
+              placeholder="Type your email here, please!"
               className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
             />
           </label>
           <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message, please!</span>
+            <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea
               rows={7}
               name='message'
